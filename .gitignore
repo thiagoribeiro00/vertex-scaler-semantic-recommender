@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project Specific
+.env
+data/*.csv
+data/*.npy
+!data/olist_products_dataset.csv
+!data/product_category_name_translation.csv
+!data/product_embeddings.npy
+!data/product_ids.csv
+
+# Large Data (Exclude these specifically if they are in the data/ folder)
+data/olist_order_items_dataset.csv
+data/olist_orders_dataset.csv
+data/olist_customers_dataset.csv
+data/olist_geolocation_dataset.csv
+data/olist_order_payments_dataset.csv
+data/olist_order_reviews_dataset.csv
+data/olist_sellers_dataset.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+output.txt
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/

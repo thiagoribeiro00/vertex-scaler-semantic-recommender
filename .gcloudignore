@@ -1,0 +1,30 @@
+.gcloudignore
+.git
+.gitignore
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.vscode/
+.idea/
+
+# Exclude large data files if they are not strictly needed in the container
+# or if they are already on GCS
+# data/
+# However, for the local-fallback to work, we might need some of them.
+# Let's ignore the heavy raw CSVs that aren't needed by the API.
+data/olist_order_items_dataset.csv
+data/olist_orders_dataset.csv
+data/olist_customers_dataset.csv
+data/olist_geolocation_dataset.csv
+data/olist_order_payments_dataset.csv
+data/olist_order_reviews_dataset.csv
+data/olist_sellers_dataset.csv
+
+# Keep only the necessary ones for the API:
+# data/product_embeddings.npy
+# data/product_ids.csv
+# data/olist_products_dataset.csv
+# data/product_category_name_translation.csv
